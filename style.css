@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(49, 33, 49);
+}
+.container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 8%); /* Equally spaced columns */
+    grid-template-rows: repeat(3, 30%); /* Equally spaced rows */
+    gap: 20px; /* Adjust the gap between cells */
+    /* justify-items: center; Center content horizontally within cells */
+    /*align-items: center;  Center content vertically within cells */
+    margin: 4px auto;
+    justify-content: center;
+}
+.board:hover{
+    box-shadow: rgb(170, 169, 169);
+}
+h1{
+    color: rgb(170, 169, 169);
+}
+
+.cell {
+    width: 100px;
+    height: 90px;
+    padding: 13px;
+    font-size: 2em;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #442a49;
+    cursor: pointer;
+    border: 3px solid rgb(109, 43, 92);
+    border-radius: 6px;
+    color: #a79696;
+}
+.cell:hover{
+    box-shadow: rgb(170, 169, 169);
+}
+
+.message {
+    margin: 20px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 1em;
+    background-color: rgb(107, 106, 106);    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    color: blueviolet;
+    /* background-color: rgb(111, 38, 117); */
+    background-color: transparent;
+    border:  3px solid rgb(97, 9, 97);
+    box-shadow: rgb(230, 227, 227);
+}
